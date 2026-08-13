@@ -1,0 +1,29 @@
+<div class="form">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <select id="category">
+        <option value="FOOD">Food</option>
+        <option value="TRAVEL">Travel</option>
+        <option value="ENTERTAINMENT">Entertainment</option>
+    </select>
+
+    <input type="text" id="description" placeholder="Description">
+    <input type="date" id="date">
+
+    <button onclick="addExpense()">Add Expense</button>
+</div>
+
+<h2>All Expenses</h2>
+
+<button onclick="getExpenses()">Load Expenses</button>
+
+<ul id="expenseList"></ul>
+
+<script src="index.js"></script>
